@@ -14,22 +14,22 @@ Primärschlüssel sind gekennzeichnet durch folgendes::
 Die Spaltentypen sind das erste Argument von **Column**.
 Die folgenden Typen sind die häufigsten:
 
-=============== ======================================================
-Typen			Beschreibung
-=============== ======================================================
-*Integer*		eine ganze Zahl
-*Sting(size)*	eine Zeichenkette mit maximaler länge
-*Text*			längerer Unicode-Text
-*DateTime*		Datum und Zeit, ausgedrückt in Python Datetime-Objekt
-*Float*			speichert Gleitkommazahlen
-*Boolean*		speichert boolesche Werte
-*PickleType*	speichert ein eingelegtes Python-Objekt
-*LargeBinary*	speichert große willkürlche Binärdaten
---------------- ------------------------------------------------------
+===============  ======================================================
+Typen			 Beschreibung
+===============  ======================================================
+*Integer*	     eine ganze Zahl
+*Sting(size)*	 eine Zeichenkette mit maximaler länge
+*Text*			 längerer Unicode-Text
+*DateTime*		 Datum und Zeit, ausgedrückt in Python Datetime-Objekt
+*Float*			 speichert Gleitkommazahlen
+*Boolean*		 speichert boolesche Werte
+*PickleType*	 speichert ein eingelegtes Python-Objekt
+*LargeBinary*	 speichert große willkürlche Binärdaten
+===============  ======================================================
 
 Ein kleines Code-Beispiel:
 
-``class User(db.Model):
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True)
     email = db.Column(db.String(120), unique=True)
@@ -39,4 +39,4 @@ Ein kleines Code-Beispiel:
         self.email = email
 
     def __repr__(self):
-        return '<User %r>' % self.username``
+        return '<User %r>' % self.username
