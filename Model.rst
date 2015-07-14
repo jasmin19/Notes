@@ -5,6 +5,8 @@ Notizen
 Models
 ======
 
+Die Basisklasse für alle Modelle heißt **db.Model**.
+
 Um eine Spalte zu definieren benutzt man **Column**. Der Name der Spalte ist der Name, den man zugewiesen hat. Wenn man jedoch einen anderen Name in der Tabelle nutzen möchte, kann man das als optionales erstes Argument festelgen.
 Primärschlüssel sind gekennzeichnet durch folgendes::
 	
@@ -40,3 +42,13 @@ Ein kleines Code-Beispiel::
 
 	    def __repr__(self):
 	        return '<User %r>' % self.username
+
+
+
+Der Tabellenname der Klasse kann folgendermaßen explizit angegeben werden::
+
+	class User(db.Model):
+		__tablename__ = 'my_table_user'
+		...
+
+
