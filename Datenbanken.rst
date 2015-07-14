@@ -24,12 +24,12 @@ Bei der Tabelle **Anrede** ist das *akuerzel* der Primärschlüssel und in der T
 
 Tabelle: Adresse:
 
-	========== ======== ========= ========
-	id 			name	akuerzel	plz 
-	========== ======== ========= ========
-	1			Susi	w 			72074	
-	2			Peter 	m 			72070
-	========== ======== ========= ========
+	==== ======== ========= ========
+	id 	 name	  akuerzel	plz 
+	==== ======== ========= ========
+	1	 Susi	  w 		72074	
+	2	 Peter 	  m 		72070
+	==== ======== ========= ========
 
 
 Tabelle: Plz:
